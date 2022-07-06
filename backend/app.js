@@ -1,11 +1,8 @@
 const express = require("express");
-const app = express();
 
-// Importing model
 const Data = require("./models/dataModel");
 
-// Routes
-
+const app = express();
 app.get("/data", paginatedData(Data), (req, res) => {
   res.json(res.paginatedResults);
 });
@@ -20,7 +17,7 @@ function paginatedData(model) {
 
     const results = {};
 
-    if (end < model.length) {
+    if (page < 50) {
       results.next = {
         page: page + 1,
         limit: limit,
@@ -45,5 +42,4 @@ function paginatedData(model) {
   };
 }
 
-// Expoerts
 module.exports = app;
