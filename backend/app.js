@@ -1,22 +1,10 @@
 const express = require("express");
-const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-
-const Data = require("./models/dataModel");
-
 const app = express();
 
-dotenv.config({ path: "./config.env" });
-const DB = process.env.DATABASE;
+// Importing model
+const Data = require("./models/dataModel");
 
-mongoose
-  .connect(DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Connected with DB 🟢🟢🟢");
-  });
+// Routes
 
 app.get("/data", paginatedData(Data), (req, res) => {
   res.json(res.paginatedResults);
@@ -32,7 +20,7 @@ function paginatedData(model) {
 
     const results = {};
 
-    if (page < 50) {
+    if (end < model.length) {
       results.next = {
         page: page + 1,
         limit: limit,
@@ -57,7 +45,5 @@ function paginatedData(model) {
   };
 }
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`App running on port ${port}...`);
-});
+// Expoerts
+module.exports = app;
