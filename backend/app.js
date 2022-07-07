@@ -1,9 +1,12 @@
 const express = require("express");
+var cors = require("cors");
 
 const Data = require("./models/dataModel");
-
 const app = express();
-app.get("/data", paginatedData(Data), (req, res) => {
+
+app.use(cors());
+
+app.get("/api/v1/data", paginatedData(Data), (req, res) => {
   res.json(res.paginatedResults);
 });
 
