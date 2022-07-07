@@ -12,7 +12,7 @@ Project built on MERN Stack
 ![image](https://user-images.githubusercontent.com/90630641/177787541-96f8ca1d-d4cb-43ae-a0e6-df9b96e34b6e.png)
 
 
-#Link of the project
+# Link of the project
 
 The project is hosted on :-
 https://vit-trendz-submission.vercel.app/
