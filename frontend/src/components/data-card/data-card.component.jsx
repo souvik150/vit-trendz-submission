@@ -1,22 +1,26 @@
 import React from "react";
 
+import "./data-card.styles.css";
+
 const DataCard = ({ item }) => {
   return (
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title">
-          {item.insight}, {item.country}
-        </h5>
-        <h5 class="card-title"></h5>
-        <h6 class="card-text">{item.title}</h6>
-        <h6 class="card-text">Source: {item.source}</h6>
-        <p class="card-title">
-          Sector: {item.sector} &nbsp; &nbsp; &nbsp; Topic: {item.topic}
-        </p>
+    <div className="card mb-3 data-card">
+      <div className="card-body">
+        <div class="left-con">
+          <h3 className="card-title">
+            {item.insight}, {item.country}
+          </h3>
+          <h4 className="color-s card-text">{item.title}</h4>
+          <h5 className="bold">Topic: {item.topic}</h5>
+        </div>
+        <div class="ar">
+          <h6 className="card-text">Source: {item.source}</h6>
+          <h5 className="card-title">Sector: {item.sector}</h5>
 
-        <a href={item.url} class="btn btn-primary">
-          Read Now
-        </a>
+          <a href={item.url} className="btn btn-dark">
+            Read Now
+          </a>
+        </div>
       </div>
     </div>
   );

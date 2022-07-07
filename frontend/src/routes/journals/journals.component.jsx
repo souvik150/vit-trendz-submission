@@ -3,6 +3,8 @@ import axios from "axios";
 import Data from "./../../components/data-list/data-list.component";
 import { Pagination } from "antd";
 
+import "./journals.styles.css";
+
 const Journal = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([{}]);
@@ -41,8 +43,8 @@ const Journal = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h1 className="text-primary mb">The Journal Manager</h1>
+    <div className="j-container mt-5">
+      <h1 className="j-title heading-primary">The Journal Manager</h1>
       <Data data={currentData} loading={loading} />
       <div class="pb-5">
         <Pagination

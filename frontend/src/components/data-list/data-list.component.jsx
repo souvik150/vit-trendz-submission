@@ -7,7 +7,7 @@ const Data = ({ data, loading }) => {
   }
 
   return (
-    <ul className="list-group mb-4">
+    <ul className="list-group mb-4 ">
       {data.map((item) => (
         <div>
           <DataCard key={item._id} item={item} />

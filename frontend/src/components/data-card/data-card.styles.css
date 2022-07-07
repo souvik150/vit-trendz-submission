@@ -1,0 +1,30 @@
+.data-card {
+  border-radius: 0px;
+  box-shadow: 5px 5px;
+  margin-bottom: 10rem;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ar {
+  text-align: right;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left-con {
+  max-width: 60rem;
+}
+
+color-s {
+  padding: 3rem 0;
+}
