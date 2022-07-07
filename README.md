@@ -2,10 +2,10 @@
 
 A project made for round 2 of VIT Trendz tech interview (Full stack web development).
 
-#Tech Stack
+# Tech Stack
 Project built on MERN Stack
 
-#Project UI
+# Project UI
 
 ![image](https://user-images.githubusercontent.com/90630641/177787295-7b45ee20-ac87-4a77-8ab5-abec1ab5b6b7.png)
 ![image](https://user-images.githubusercontent.com/90630641/177787366-f46dcb65-a98e-4e22-bc1b-88059ee30527.png)
