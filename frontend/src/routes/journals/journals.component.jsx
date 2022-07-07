@@ -15,7 +15,7 @@ const Journal = () => {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      const res = await axios.get("http://localhost:8080/api/v1/data");
+      const res = await axios.get("https://vittrendzrecruitmentsouvik150.herokuapp.com/api/v1/data");
       setData(res.data.results);
       setTotal(res.data.results.length);
       setLoading(false);
