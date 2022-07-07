@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState([{}]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [dataPerPage] = useState(5);
+  const [dataPerPage] = useState(35);
 
   useEffect(() => {
     const fetchData = async () => {

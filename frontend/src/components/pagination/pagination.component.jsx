@@ -10,8 +10,8 @@ const Pagination = ({ dataPerPage, totalData, paginate }) => {
   return (
     <nav>
       <ul className="pagination">
-        <li class="page-item">
-          <a class="page-link" href="#">
+        <li className="page-item">
+          <a className="page-link" href="#">
             Previous
           </a>
         </li>
@@ -24,8 +24,8 @@ const Pagination = ({ dataPerPage, totalData, paginate }) => {
           </li>
         ))}
 
-        <li class="page-item">
-          <a class="page-link" href="#">
+        <li className="page-item">
+          <a className="page-link" href="#">
             Next
           </a>
         </li>

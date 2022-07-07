@@ -1,4 +1,5 @@
 import React from "react";
+import DataCard from "../data-card/data-card.component";
 
 const Data = ({ data, loading }) => {
   if (loading) {
@@ -8,7 +9,9 @@ const Data = ({ data, loading }) => {
   return (
     <ul className="list-group mb-4">
       {data.map((item) => (
-        <li className="list-group-item">{item.title}</li>
+        <div>
+          <DataCard key={item._id} item={item} />
+        </div>
       ))}
     </ul>
   );
