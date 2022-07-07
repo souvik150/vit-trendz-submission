@@ -8,9 +8,7 @@ const Data = ({ data, loading }) => {
   return (
     <ul className="list-group mb-4">
       {data.map((item) => (
-        <li key={item.id} className="list-group-item">
-          {item.title}
-        </li>
+        <li className="list-group-item">{item.title}</li>
       ))}
     </ul>
   );
